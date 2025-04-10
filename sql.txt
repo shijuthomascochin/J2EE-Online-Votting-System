@@ -1,0 +1,44 @@
+Admin
+aname varchar(100)
+apass varchar(100)
+
+
+School
+school_id   varchar(100)
+school_name varchar(200)
+
+Student
+SID varchar(20)
+SNAME varchar 100
+SEMAIL 100
+SPHONE 20
+SCHOOL_ID 20
+SYEAR 50
+SPASS 100
+
+
+Committee
+sid	 VARCHAR	20	0		false	
+status	VARCHAR	20	0		false	
+cname	VARCHAR	100	0		false	
+cpass	VARCHAR	100	0		false
+
+
+ELEPOS
+pid	 VARCHAR	20	0		false	
+pname	VARCHAR	100	0		false	
+papplydate	VARCHAR	100	0		false	
+pvotedate	VARCHAR	100	0		false
+
+Contester
+sid 	VARCHAR	20	0		false	
+sname	VARCHAR	100	0		false	
+pid	VARCHAR	20	0		false	
+pname	VARCHAR	100	0		false	
+school_id	VARCHAR	100	0		false	
+school_name	VARCHAR	200	0		false	
+uname	VARCHAR	100	0		false	
+pass	VARCHAR	100	0		false	
+vcount	INTEGER	0	0	0	false		
+
+create table VOTE(SID varchar(20), PID varchar(20), primary key(SID,PID));	
